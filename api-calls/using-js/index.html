@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Calls</title>
+</head>
+
+<body>
+    <center><p id="result" >Hi, Mom</p></center>
+
+
+    <script>
+        fetch('https://gorest.co.in/public/v1/users', {
+                headers: {
+                    Authentication: 'd7c01847de4c083cb154e9a533294301e9f05f93dbae7d589e42ece63226c0a3'
+                }
+            })
+            .then(res => res.json())
+            .then(json => {
+                console.log(json);
+                document.getElementById("result").innerHTML = JSON.stringify(json)
+            })
+    </script>
+</body>
+
+</html>
