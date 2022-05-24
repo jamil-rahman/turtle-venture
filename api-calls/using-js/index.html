@@ -9,20 +9,23 @@
 </head>
 
 <body>
-    <center><p id="result" >Hi, Mom</p></center>
+    <center><p id="result" onclick="getDetails()">Click here to fetch details</p></center>
 
 
     <script>
-        fetch('https://gorest.co.in/public/v1/users', {
+        const getDetails=()=>{
+        const url = 'https://gorest.co.in/public/v1/users'
+        const token = 'd7c01847de4c083cb154e9a533294301e9f05f93dbae7d589e42ece63226c0a3'
+        fetch(url, {
                 headers: {
-                    Authentication: 'd7c01847de4c083cb154e9a533294301e9f05f93dbae7d589e42ece63226c0a3'
+                    Authentication: token
                 }
             })
             .then(res => res.json())
             .then(json => {
                 console.log(json);
                 document.getElementById("result").innerHTML = JSON.stringify(json)
-            })
+            })}
     </script>
 </body>
 
