@@ -1,0 +1,40 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(237, 173, 97);
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  padding: 0;
+}
+
+li a {
+  margin: 0;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.icon {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  text-align: center;
+}
+img {
+  height: 20px;
+}
+.header {
+  font-size: 25px;
+  font-weight: bolder;
+}
