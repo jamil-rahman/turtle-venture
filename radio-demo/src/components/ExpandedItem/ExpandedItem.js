@@ -2,6 +2,7 @@ import React from "react";
 import minus from "../../assets/buttons/minus.png";
 import plus from "../../assets/buttons/plus.png";
 import styles from "./ExpandedItem.module.css";
+import PropTypes from "prop-types";
 
 function ExpandedItem(props) {
   return (
@@ -14,7 +15,7 @@ function ExpandedItem(props) {
           className={styles.faviconContainer}
           onError={(e) => {
             e.target.src =
-              "https://static-01.daraz.com.bd/p/516013f044b7676deeadb14955f3aa54.jpg";
+              "https://png.pngtree.com/png-vector/20190420/ourlarge/pngtree-vector-radio-icon-png-image_965380.jpg";
           }}
         />
       </div>
@@ -23,4 +24,7 @@ function ExpandedItem(props) {
   );
 }
 
+ExpandedItem.propTypes = {
+  image: PropTypes.string,
+};
 export default ExpandedItem;
