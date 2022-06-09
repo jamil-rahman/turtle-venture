@@ -6,6 +6,7 @@
     width: 17%;
     min-width: 30%;
     min-height: 600px;
+    position: relative;
     margin: 0;
     box-shadow: -13px 30px 25px 6px rgba(20,20,26,0.51);
 -webkit-box-shadow: -13px 30px 25px 6px rgba(20,20,26,0.51);

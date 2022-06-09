@@ -1,12 +1,15 @@
+import React from 'react'
+import Footer from '../../components/Footer/Footer'
 import Navbar from '../../components/Navbar/Navbar'
+import RadioList from '../../components/RadioList/RadioList'
 import styles from './RadioPlayer.module.css'
 
 function Radioplayer() {
   return (
     <div className={styles.container}>
         <Navbar />
-        <h3>Radio List</h3>
-        <h2>Footer</h2>
+        <RadioList />
+        <Footer />
     </div>
   )
 }

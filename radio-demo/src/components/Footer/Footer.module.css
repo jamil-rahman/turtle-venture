@@ -1,0 +1,27 @@
+.container{
+    position: absolute;
+    flex-direction: column;
+    bottom: 0px;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(34,34,43);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.info{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.nowPlaying{
+    color: rgb(237,174,97)
+}
+.stationName{
+    padding: 10px;
+    font-weight: 600;
+    color: rgb(162, 171, 189)
+}

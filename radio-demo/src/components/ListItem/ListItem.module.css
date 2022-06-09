@@ -1,0 +1,49 @@
+.listContainer {
+  background-color: rgb(46, 46, 57);
+  padding: 20px;
+  font-weight: bolder;
+  border-bottom: 1px solid rgb(63,63,73);
+}
+.itemContainer{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+.stationName {
+  float: left;
+  color: rgb(162, 171, 189);
+  margin-left: 20px;
+  font-weight: 500;
+}
+.stationFM {
+  float: right;
+  color: rgb(162, 171, 189);
+  margin-right: 20px;
+  font-weight: 500;
+}
+
+
+@media screen and (max-width: 768px) {
+  .stationName {
+    font-size: small;
+  }
+  .stationFM {
+    font-size: small;
+  }
+}
+@media screen and (max-width: 667px) {
+  .stationName {
+    font-size: small;
+  }
+  .stationFM {
+    font-size: small;
+  }
+}
+@media screen and (max-width: 992px) {
+  .stationName {
+    font-size: small;
+  }
+  .stationFM {
+    font-size: small;
+  }
+}

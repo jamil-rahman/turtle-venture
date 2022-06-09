@@ -1,10 +1,12 @@
 import styles from "./Navbar.module.css";
 import switch_button from '../../assets/buttons/switch.png'
 import backArrow  from '../../assets/buttons/back-arrow.png'
+import React from 'react'
+
 
 function Navbar() {
   return (
-    <div clas>
+    <div className={styles.container}>
       <ul>
         <li className={styles.icon}>
           <a href="#back">
