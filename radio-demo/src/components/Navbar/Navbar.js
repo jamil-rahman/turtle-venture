@@ -13,7 +13,7 @@ function Navbar() {
           </a>
         </li>
         <li className={styles.icon}>
-          <a href="#news">
+          <a href="#home">
             <span className={styles.header}>STATIONS</span>
           </a>
         </li>

@@ -12,7 +12,7 @@
     <h1 style="text-align: center;">Turn the light on and off by clicking the bulb!</h1>
     <div class="image-container" style="padding: 50px; display: flex; justify-content: center;">
 
-        <img id="bulb-image" onclick="bulbSwitch()" height="300px" src="bulb-off.png">
+        <img style="cursor: pointer;" id="bulb-image" onclick="bulbSwitch()" height="300px" src="bulb-off.png">
 
     </div>
 
@@ -21,7 +21,7 @@
         function bulbSwitch() {
             const image = document.getElementById('bulb-image');
 
-            image.src.match('bulb-on') ? image.src = 'bulb-off.png' : image.src = 'bulb-on.png'
+            image.src.match('bulb-on.png') ? image.src = 'bulb-off.png' : image.src = 'bulb-on.png'
 
         }
     </script>
